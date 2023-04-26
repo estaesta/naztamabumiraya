@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="garden">
   <head>
     <title></title>
     <meta charset="UTF-8" />
@@ -10,9 +10,9 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
   </head>
-  <body>
+  <body class="bg-white">
     <!-- navbar -->
-    <div class="navbar bg-base-100 px-10">
+    <div class="navbar bg-white px-10">
       <div class="flex-1">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost md:hidden">
@@ -90,7 +90,7 @@
           <li><a>Item 3</a></li>
         </ul>
       </div>
-      <a class="btn">Get started</a>
+      <a class="btn normal-case">Get started</a>
     </div>
 
     <!-- banner -->
@@ -114,12 +114,48 @@
           </p>
           <!-- button "daftar sekarang" -->
           <div class="flex justify-center">
-            <a href="#" class="btn bg-white text-black btn-md my-4"
+            <a
+              href="#"
+              class="btn bg-white text-black btn-primary hover:text-white btn-md my-4 normal-case"
               >Daftar Sekarang</a
             >
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- 1st section -->
+    <div class="tabs container mx-auto p-4 my-10 max-w-6xl block">
+      <h1 class="font-bold text-xl mb-2">Pengurusan AMDAL</h1>
+      <p class="mb-2">
+        Analisis Mengenai Dampak Lingkungan atau AMDAL adalah kajian mengenai
+        dampak besar penting dari suatu usaha/ kegiatan/ pembangunan yang
+        direncanakan pada lingkungan hidup yang diperlukan bagi proses
+        pengambilan keputusan tentang penyelenggaraan Pembangunan atau kegiatan
+        di Indonesia.
+      </p>
+
+      <h1 class="font-bold text-xl my-2">Hasil keluaran AMDAL</h1>
+      <ol class="list-inside list-decimal">
+        <li>Dokumen KA-ANDAL</li>
+        <li>Dokumen ANDAL, RKL & RPL</li>
+        <li>Persetujuan lingkungan dari Dinas Lingkungan Hidup</li>
+        <li>surat keterangan kelayakan lingkungan (SKKL/PKPLH)</li>
+      </ol>
+      <h1 class="font-bold text-xl my-2">Estimasi Waktu pembuatan AMDAL</h1>
+      <ol class="list-inside list-decimal">
+        <li>
+          Industri/ Rumah sakit/ Mall/ Pusat perbelanjaan = 150 hari kerja
+        </li>
+        <li>Apartemen/ Perumahan/ Kondominium = 120 hari kerja</li>
+        <li>
+          Kawasan Indsutri/ Kawasan campuran/ Pertambangan = 180 hari kerja
+        </li>
+        <li>
+          Bandara/ Pelabuhan/ Terminal/ Akses tol/ Infrastruktur lainnya = 180
+          hari kerja
+        </li>
+      </ol>
     </div>
   </body>
 </html>
