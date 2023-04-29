@@ -9,8 +9,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
-  <body>
+  <body class="bg-white">
     <!-- navbar -->
     <div class="navbar bg-white px-10">
       <div class="flex-1">
@@ -103,60 +107,6 @@
       <a class="btn normal-case">Daftar Sekarang</a>
     </div>
 
-    <!-- <div class="carousel w-full h-[85vh]">
-      <div id="slide1" class="carousel-item relative w-full bg-white/10">
-        <img
-          src="https://images.unsplash.com/photo-1616596091194-eaec099773e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1159&q=80"
-          class="w-full object-cover brightness-100"
-        />
-        <div
-          class="absolute w-full h-full bg-gradient-to-r from-black from-20% to-transparent opacity-75"
-        ></div>
-
-        <div
-          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-        >
-          <a href="#slide3" class="btn btn-circle">❮</a>
-          <a href="#slide2" class="btn btn-circle">❯</a>
-        </div>
-        <div class="absolute flex transform -translate-y-1/2 top-1/2 mx-20">
-          <div class="card max-w-96 bg-base-300/80 shadow-xl h-[20rem]">
-            <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="slide2" class="carousel-item relative w-full">
-        <img
-          src="https://images.unsplash.com/photo-1598006844670-d8ef9bd2eed2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=8j"
-          class="w-full object-cover brightness-75"
-        />
-        <div
-          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-        >
-          <a href="#slide1" class="btn btn-circle">❮</a>
-          <a href="#slide3" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-      <div id="slide3" class="carousel-item relative w-full">
-        <img
-          src="https://images.unsplash.com/photo-1587168173357-99c7e95fb5cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80"
-          class="w-full object-cover brightness-75"
-        />
-        <div
-          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-        >
-          <a href="#slide2" class="btn btn-circle">❮</a>
-          <a href="#slide1" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-    </div> -->
-
     <!-- Swiper -->
     <div class="swiper h-[85vh]">
       <div class="swiper-wrapper">
@@ -174,6 +124,7 @@
             <div class="text-white max-w-xl mr-[44px]">
               <h1 class="text-6xl font-bold">Lorem</h1>
               <p class="text-md">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+              <div class="btn bg-white text-black mt-4">Daftar Sekarang</div>
             </div>
           </div>
         </div>
@@ -191,6 +142,7 @@
             <div class="text-white max-w-xl mr-[44px]">
               <h1 class="text-6xl font-bold">Lorem</h1>
               <p class="text-md">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+              <div class="btn bg-white text-black mt-4">Daftar Sekarang</div>
             </div>
           </div>
         </div>
@@ -201,13 +153,14 @@
             class="w-full h-full object-cover"
           />
           <div
-            class="absolute inset-0 bg-gradient-to-r from-black from-40% to-transparent opacity-25"
+            class="absolute inset-0 bg-gradient-to-r from-black from-50% to-transparent opacity-25"
           ></div>
           <div class="absolute inset-0 flex justify-start items-center">
             <div class="w-1/12 min-w-[44px]"></div>
             <div class="text-white max-w-xl mr-[44px]">
               <h1 class="text-6xl font-bold">Lorem</h1>
               <p class="text-md">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+              <div class="btn bg-white text-black mt-4">Daftar Sekarang</div>
             </div>
           </div>
         </div>
@@ -217,18 +170,252 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <div class="container mx-auto p-4 my-10 w-1/2">
-      <p class="text-justify my-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ut
-        possimus debitis, blanditiis ea cum assumenda quo inventore reiciendis
-        nam minus distinctio eveniet soluta ab.
-      </p>
-      <p class="text-justify my-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ut
-        possimus debitis, blanditiis ea cum assumenda quo inventore reiciendis
-        nam minus distinctio eveniet soluta ab.
-      </p>
+    <div class="container mx-auto p-4 my-10 max-w-6xl grid grid-cols-2">
+      <div>
+        <h1 class="text-4xl font-bold">Amdal Logo</h1>
+        <p class="my-2">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+        <p class="my-2">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+        <div class="btn min-h-6 h-8 my-2">Tentang</div>
+      </div>
+      <div class="grid grid-row-3 gap-2">
+        <div class=" flex flex-row">
+          <div class="w-3/12 flex justify-center">
+            <i class="fas fa-check-square fa-4x p-2"></i>
+          </div>
+          <div class="w-full h-full">
+            <div class="font-bold">
+              Mudah
+            </div>
+            <div>
+              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+            </div>
+          </div>
+        </div>
+        <div class=" flex flex-row">
+          <div class="w-3/12 flex justify-center">
+            <i class="fas fa-certificate fa-4x p-2"></i>
+          </div>
+          <div class="w-full h-full">
+            <div class="font-bold">Profesional</div>
+            <div>
+              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+            </div>
+          </div>
+        </div>
+        <div class=" flex flex-row">
+          <div class="w-3/12 flex justify-center">
+            <i class="fas fa-thumbs-up fa-4x p-2"></i>
+          </div>
+          <div class="w-full h-full">
+            <div class="font-bold">Terpercaya</div>
+            <div>
+              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="bg-gray-700">
+      <div class="container mx-auto p-4 my-10 max-w-6xl text-white text-center">
+        <div class="text-3xl font-bold my-7">AMDALKU langkah pertama sukseskan usaha anda</div>
+        <div class="my-7">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</div>
+      </div>
+    </div>
+    <div class="text-center font-bold text-3xl pb-4">Biaya Hemat, Kualitas Hebat. Rekomendasi Paket Terbaik</div>
+
+    <!-- card -->
+    <div
+      class="container mx-auto p-4 my-10 grid md:grid-cols-2 gap-4 max-w-6xl justify-items-center"
+    >
+      <div
+        class="card shadow-xl border hover:bg-gray-800 hover:text-white transition-colors max-w-sm "
+      >
+        <div class="card-body">
+          <div class="text-center">
+            <h2 class="font-bold text-xl">AMDAL / DELH</h2>
+            <p class="text-sm text-gray-700 my-4">Khusus Luasan</p>
+            <h2 class="font-bold text-2xl">
+              10.000 M<sup>2</sup> - 20.000 M<sup>2</sup>
+            </h2>
+            <h3 class="font-bold">di Jalan Nasional</h3>
+          </div>
+          <hr class="border-[2.5px] border-base-300" />
+          <ol class="list-outside list-decimal ml-4">
+            <li>Konsultasi Publik</li>
+            <li>Pengumuman Koran/Media Masa</li>
+            <li>Penyusunan & Pengesahan KA-ANDAL</li>
+            <li>Penyusunan & Pengesahan KA-ANDAL & RKL - RPL</li>
+            <li>Persetujuan Lingkungan Hidup</li>
+            <li>Andalalin (khusus Jalan Nasional)</li>
+            <li>Pertek Limbah B3 (IPL-B3)</li>
+            <li>Pertek Emisi</li>
+            <li>Pertek Air Limbah (IPAL/IPLC)</li>
+          </ol>
+          <hr class="border-[2.5px] border-base-300" />
+
+          <ul class="list-outside list-disc ml-4">
+            <li>Gratis Konsultasi dengan Tenaga Ahli</li>
+            <li>Gratis Andalalin (Khusus Jalan Nasional)</li>
+            <li>senilai Rp 150.000.000 JT</li>
+            <li>Gratis Pertek Limbah B3</li>
+            <li>senilai Rp 35.000.000 JT</li>
+            <li>Gratis Pertek Emisi</li>
+            <li>senilai Rp 35.000.000</li>
+          </ul>
+
+          <div class="price my-3 mx-auto">
+            <div class="text-sm text-gray-600">
+              <strike>Rp. 350.000.000</strike>
+            </div>
+            <div class="text-4xl font-bold">Rp. 299.000.000</div>
+            <div class="flex justify-center mt-5 w-full">
+              <button class="btn w-full rounded-full">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card shadow-xl border hover:bg-gray-800 hover:text-white transition-colors max-w-sm "
+      >
+        <div class="card-body">
+          <div class="text-center">
+            <h2 class="font-bold text-xl">AMDAL / DELH</h2>
+            <p class="text-sm text-gray-700 my-4">Khusus Luasan</p>
+            <h2 class="font-bold text-2xl">
+              10.000 M<sup>2</sup> - 20.000 M<sup>2</sup>
+            </h2>
+            <h3 class="font-bold">di Jalan Nasional</h3>
+          </div>
+          <hr class="border-[2.5px] border-base-300" />
+          <ol class="list-outside list-decimal ml-4">
+            <li>Konsultasi Publik</li>
+            <li>Pengumuman Koran/Media Masa</li>
+            <li>Penyusunan & Pengesahan KA-ANDAL</li>
+            <li>Penyusunan & Pengesahan KA-ANDAL & RKL - RPL</li>
+            <li>Persetujuan Lingkungan Hidup</li>
+            <li>Andalalin (khusus Jalan Nasional)</li>
+            <li>Pertek Limbah B3 (IPL-B3)</li>
+            <li>Pertek Emisi</li>
+            <li>Pertek Air Limbah (IPAL/IPLC)</li>
+          </ol>
+          <hr class="border-[2.5px] border-base-300" />
+
+          <ul class="list-outside list-disc ml-4">
+            <li>Gratis Konsultasi dengan Tenaga Ahli</li>
+            <li>Gratis Andalalin (Khusus Jalan Nasional)</li>
+            <li>senilai Rp 150.000.000 JT</li>
+            <li>Gratis Pertek Limbah B3</li>
+            <li>senilai Rp 35.000.000 JT</li>
+            <li>Gratis Pertek Emisi</li>
+            <li>senilai Rp 35.000.000</li>
+          </ul>
+
+          <div class="price my-3 mx-auto">
+            <div class="text-sm text-gray-600">
+              <strike>Rp. 350.000.000</strike>
+            </div>
+            <div class="text-4xl font-bold">Rp. 299.000.000</div>
+            <div class="flex justify-center mt-5 w-full">
+              <button class="btn w-full rounded-full">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <hr />
+      <div class="container mx-auto p-4 mt-10 max-w-6xl">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-2/5 text-center md:text-left">
+            <h5 class="text-xl font-bold mb-6">About Us</h5>
+            <p class="mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              necessitatibus incidunt ut officiis explicabo inventore.
+            </p>
+            <ul class="flex flex-row justify-center md:justify-start">
+              <li class="mr-3">
+                <a href="#" class="hover:text-gray-800">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="mr-3">
+                <a href="#" class="hover:text-gray-800">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="mr-3">
+                <a href="#" class="hover:text-gray-800">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="mr-3">
+                <a href="#" class="hover:text-gray-800">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/5 text-center md:text-left">
+            <h5 class="text-xl font-bold mb-6">Tentang Kami</h5>
+            <ul class="list-none footer-links">
+              <li class="mb-2">
+                <a href="#" class="hover:underline">Tentang Kami</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="hover:underline">Kontak Kami</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/5 text-center md:text-left">
+            <h5 class="text-xl font-bold mb-6">Layanan</h5>
+            <ul class="list-none footer-links">
+              <li class="mb-2">
+                <a href="pelayanan-amdal.html" class="hover:underline">Amdal</a>
+              </li>
+              <li class="mb-2">
+                <a href="pelayanan-ukl-pl.html" class="hover:underline"
+                  >UKL-UPL</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="pelayanan-delh-dplh.html" class="hover:underline"
+                  >DELH-DPLH</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="pelayanan-sppl.html" class="hover:underline">SPPL</a>
+              </li>
+              <li class="mb-2">
+                <a href="pelayanan-pertek.html" class="hover:underline"
+                  >PERTEK</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/5 text-center md:text-left">
+            <h5 class="text-xl font-bold mb-6">Hubungi Kami</h5>
+            <ul class="list-none footer-links">
+              <li class="mb-2">
+                <a href="#" class="hover:underline">+62 812 3456 7890</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="hover:underline">+62 812 3456 7890</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="hover:underline">+62 812 3456 7890</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-center md:justify-start mt-6">
+          <div class="text-sm text-gray-600">
+            © 2023, estaesta. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 
   <!-- Swiper JS -->
@@ -243,10 +430,10 @@
       loop: true,
       speed: 1000,
 
-      // autoplay: {
-      //   delay: 10000,
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+      },
 
       // If we need pagination
       pagination: {
