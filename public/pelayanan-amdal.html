@@ -14,9 +14,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
   </head>
-  <body class="bg-white">
+  <body class="bg-base-200">
     <!-- navbar -->
-    <div class="navbar bg-white max-w-screen-2xl mx-auto">
+    <div class="navbar max-w-screen-2xl mx-auto">
       <div class="flex-1">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost md:hidden">
@@ -130,7 +130,7 @@
           <div class="flex justify-center">
             <a
               href="#"
-              class="btn bg-white text-black btn-primary hover:text-white btn-md my-4 normal-case"
+              class="btn bg-white text-black hover:text-white btn-md my-4 normal-case border-transparent"
               >Daftar Sekarang</a
             >
           </div>
@@ -334,8 +334,61 @@
       </div>
     </div>
 
+    <!-- tabs -->
+    <div
+      class="container mx-auto p-4 my-10 max-w-6xl"
+      x-data="{ activeTab: 1 }"
+    >
+      <div class="tabs">
+        <a
+          class="tab tab-lg tab-bordered transition-all"
+          @click.prevent="activeTab = 1"
+          :class="{ 'tab-active': activeTab === 1 }"
+          href="#tab1"
+          >Tab 1</a
+        >
+        <a
+          class="tab tab-lg tab-bordered transition-all"
+          @click.prevent="activeTab = 2"
+          :class="{ 'tab-active': activeTab === 2 }"
+          href="#tab2"
+          >Tab 2</a
+        >
+        <a
+          class="tab tab-lg tab-bordered transition-all"
+          @click.prevent="activeTab = 3 "
+          :class="{ 'tab-active': activeTab === 3 }"
+          href="#tab3"
+          >Tab 3</a
+        >
+      </div>
+      <div class="w-full pt-4">
+        <div x-show="activeTab === 1" x-transition.opacity.duration.300ms>
+          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+          cillum sint consectetur cupidatat.
+        </div>
+        <div x-show="activeTab === 2" x-transition.opacity.duration.300ms>
+          Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
+          enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
+          exercitation amet. Nisi anim cupidatat excepteur officia.
+          Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
+          voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
+          officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+          commodo officia dolor Lorem duis laboris cupidatat officia voluptate.
+          Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis
+          officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis
+          sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
+          consectetur et est culpa et culpa duis.
+        </div>
+        <div x-show="activeTab === 3" x-transition.opacity.duration.300ms>
+          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+          cillum sint consectetur cupidatat.
+        </div>
+      </div>
+    </div>
+
     <!-- footer -->
-    <footer>
+    <footer class="bg-base-100">
       <hr />
       <div class="container mx-auto p-4 mt-10 max-w-6xl">
         <div class="flex flex-wrap">
