@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="garden">
+<html data-theme="">
   <head>
     <title></title>
     <meta charset="UTF-8" />
@@ -10,9 +10,9 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
   </head>
-  <body class="bg-white">
+  <body class="bg-base-200">
     <!-- navbar -->
-    <div class="navbar bg-white px-10">
+    <div class="navbar max-w-screen-2xl mx-auto">
       <div class="flex-1">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost md:hidden">
@@ -63,7 +63,9 @@
             <li><a href="kontak.html">Kontak Kami</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost normal-case text-xl font-bold" href="./">Amdal Logo</a>
+        <a class="btn btn-ghost normal-case text-xl font-bold" href="./"
+          >Amdal Logo</a
+        >
       </div>
       <!-- navbar desktop -->
       <div class="navbar-center hidden md:flex z-40">
@@ -87,11 +89,11 @@
             <ul
               class="p-2 bg-white scale-0 hover:scale-100 peer-hover:scale-100"
             >
-                <li><a href="pelayanan-amdal.html">AMDAL</a></li>
-                <li><a href="pelayanan-ukl-pl.html">UKL-UPL</a></li>
-                <li><a href="pelayanan-delh-dplh.html">DELH-DPLH</a></li>
-                <li><a href="pelayanan-sppl.html">SPPL</a></li>
-                <li><a href="pelayanan-pertek.html">PERTEK</a></li>
+              <li><a href="pelayanan-amdal.html">AMDAL</a></li>
+              <li><a href="pelayanan-ukl-pl.html">UKL-UPL</a></li>
+              <li><a href="pelayanan-delh-dplh.html">DELH-DPLH</a></li>
+              <li><a href="pelayanan-sppl.html">SPPL</a></li>
+              <li><a href="pelayanan-pertek.html">PERTEK</a></li>
             </ul>
           </li>
           <li><a href="tentang.html">Tentang Kami</a></li>
@@ -100,5 +102,99 @@
       </div>
       <a class="btn normal-case">Daftar Sekarang</a>
     </div>
+
+    <!-- footer -->
+    <footer class="bg-base-100">
+      <hr />
+      <div class="container mx-auto p-4 mt-10 max-w-6xl">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-2/5 text-center md:text-left">
+            <h5 class="text-xl font-bold mb-6">About Us</h5>
+            <p class="mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              necessitatibus incidunt ut officiis explicabo inventore.
+            </p>
+            <ul class="flex flex-row justify-center md:justify-start">
+              <li class="mr-3">
+                <a href="#" class="hover:text-gray-800">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="mr-3">
+                <a href="#" class="hover:text-gray-800">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="mr-3">
+                <a href="#" class="hover:text-gray-800">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="mr-3">
+                <a href="#" class="hover:text-gray-800">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/5 text-center md:text-left">
+            <h5 class="text-xl font-bold mb-6">Tentang Kami</h5>
+            <ul class="list-none footer-links">
+              <li class="mb-2">
+                <a href="#" class="hover:underline">Tentang Kami</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="hover:underline">Kontak Kami</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/5 text-center md:text-left">
+            <h5 class="text-xl font-bold mb-6">Layanan</h5>
+            <ul class="list-none footer-links">
+              <li class="mb-2">
+                <a href="pelayanan-amdal.html" class="hover:underline">Amdal</a>
+              </li>
+              <li class="mb-2">
+                <a href="pelayanan-ukl-pl.html" class="hover:underline"
+                  >UKL-UPL</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="pelayanan-delh-dplh.html" class="hover:underline"
+                  >DELH-DPLH</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="pelayanan-sppl.html" class="hover:underline">SPPL</a>
+              </li>
+              <li class="mb-2">
+                <a href="pelayanan-pertek.html" class="hover:underline"
+                  >PERTEK</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/5 text-center md:text-left">
+            <h5 class="text-xl font-bold mb-6">Hubungi Kami</h5>
+            <ul class="list-none footer-links">
+              <li class="mb-2">
+                <a href="#" class="hover:underline">+62 812 3456 7890</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="hover:underline">+62 812 3456 7890</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="hover:underline">+62 812 3456 7890</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-center md:justify-start mt-6">
+          <div class="text-sm text-gray-600">
+            © 2023, estaesta. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
