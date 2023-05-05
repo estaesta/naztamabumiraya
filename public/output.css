@@ -3189,6 +3189,14 @@ html {
   margin-left: 2rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -3263,6 +3271,10 @@ html {
 
 .w-auto {
   width: auto;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .min-w-\[44px\] {
@@ -3423,6 +3435,14 @@ html {
 
 .gap-40 {
   gap: 10rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-36 {
+  gap: 9rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
