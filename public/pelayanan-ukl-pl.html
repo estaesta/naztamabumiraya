@@ -103,6 +103,490 @@
       <a class="btn normal-case">Daftar Sekarang</a>
     </div>
 
+    <!-- banner -->
+    <div class="relative">
+      <img
+        class="w-full object-cover h-[85vh]"
+        src="https://images.unsplash.com/photo-1524813686514-a57563d77965?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+        alt=""
+      />
+      <div class="absolute inset-0 bg-gray-800 bg-opacity-60"></div>
+      <!-- text on top layer of banner -->
+      <div
+        class="absolute top-0 left-0 w-full h-full flex justify-center items-center"
+      >
+        <div class="text-center">
+          <h1 class="text-4xl font-bold text-white my-4">
+            Upaya Pengelolaan Pemantauan Lingkungan
+          </h1>
+          <p class="text-white text-2xl my-4">
+            Konsultan UKL-UPL dengan tenaga ahli Tersertifikasi Kompentensi LSP
+            LHKI
+          </p>
+          <!-- button "daftar sekarang" -->
+          <div class="flex justify-center">
+            <a
+              href="#"
+              class="btn bg-white text-black hover:text-white btn-md my-4 normal-case border-transparent"
+              >Daftar Sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1st section -->
+    <div class="bg-base-100">
+      <div class="tabs container mx-auto px-4 py-10 max-w-6xl block">
+        <h1 class="font-bold text-xl mb-2">Jasa Konsultan UKL-UPL</h1>
+        <p class="mb-2">
+          UKL-UPL disebut juga Upaa Pengelolaan dan pemantauan lingkungan hidup
+          adalah Setiap usaha dan/atau kegiatan yang tidak berdampak penting
+          terhadap lingkungan yang tidak termasuk dalam kriteria wajib AMDAL.
+          Sedangkan setiap usaha dan/atau kegiatan yang tidak wajib dilengkapi
+          UKL-UPL wajib membuat Surat Pernyataan Kesanggupan Pengelolaan dan
+          Pemantauan Lingkungan Hidup (SPPL).
+        </p>
+
+        <h1 class="font-bold text-xl my-2">Hasil keluaran UKL-UPL:</h1>
+        <ol class="list-outside list-decimal ml-8">
+          <li>Dokumen UKL - UPL</li>
+          <li>Persetujuan Lingkungan dari dinas Lingkungan Hidup</li>
+          <li>Surat Keterangan Kelayakan Lingkungan (SKKL / PKPLH)</li>
+        </ol>
+        <h1 class="font-bold text-xl my-2">Estimasi Waktu pembuatan AMDAL</h1>
+        <ol class="list-outside list-decimal ml-8">
+          <li>
+            Industri/ Rumah sakit/ Mall/ Pusat perbelanjaan = 60 hari kerja
+          </li>
+          <li>Apartemen/ Perumahan/ Kondominium = 60 hari kerja</li>
+          <li>
+            Kawasan Indsutri/ Kawasan campuran/ Pertambangan = 60 hari kerja
+          </li>
+          <li>SPBU/ Mini market/ Restoran/ dll = 60 hari kerja</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 2nd section -->
+    <div class="text-center tabs container mx-auto p-4 my-10 max-w-6xl block">
+      <h3 class="text-3xl mb-6">
+        Biaya Hemat, Kualitas Hebat.
+        <span class="font-bold">Pengurusan AMDAL/DELH</span>
+      </h3>
+      <p>
+        Pilihan terbaik untuk Anda yang membutuhkan layanan pengurusan AMDAL dan
+        DELH pasti hemat dan efisien. Paket Terdapat kategori antara lain Paket
+        untuk Jalan Nasional, Jalan Provinsi dan Jalan Kabupaten/kota. AMDALKU
+        juga menyediakan layanan Konsultasi pelanggan yang siap membantu
+        pengurusan izin lingkungan Anda.
+      </p>
+    </div>
+
+    <!-- 3rd section, card inside tab -->
+    <div
+      x-data="{
+      activeTab : 'jalan-nasional',
+      activeClasses: 'relative block border-e border-s border-t border-gray-200 bg-white p-4 text-sm font-medium',
+      inactiveClasses: 'block bg-gray-300 p-4 text-sm font-medium text-gray-700 ring-1 ring-inset ring-white'
+    }"
+    >
+      <!-- tab -->
+      <ul
+        class="flex border-b border-gray-200 text-center container mx-auto max-w-6xl"
+      >
+        <li class="flex-1">
+          <a
+            @click.prevent="activeTab = 'jalan-nasional'"
+            :class="activeTab === 'jalan-nasional' ? activeClasses : inactiveClasses"
+            href="#jalan-nasional"
+          >
+            Jalan Nasional
+          </a>
+        </li>
+
+        <li class="flex-1">
+          <a
+            @click.prevent="activeTab = 'jalan-provinsi'"
+            :class="activeTab === 'jalan-provinsi' ? activeClasses : inactiveClasses"
+            href="#jalan-provinsi"
+          >
+            Jalan Provinsi
+          </a>
+        </li>
+
+        <li class="flex-1">
+          <a
+            @click.prevent="activeTab = 'jalan-kabupaten-kota'"
+            :class="activeTab === 'jalan-kabupaten-kota' ? activeClasses : inactiveClasses"
+            href="#jalan-kabupaten-kota"
+          >
+            Jalan Kabupaten/Kota
+          </a>
+        </li>
+      </ul>
+      <!-- cards 1 -->
+      <div
+        x-cloak
+        x-show="activeTab === 'jalan-nasional'"
+        x-transition:enter="transition ease-out duration-500"
+        x-transition:enter-start="opacity-0 transform scale-95"
+        x-transition:enter-end="opacity-100 transform scale-100"
+        class="container mx-auto p-4 my-10 grid md:grid-cols-2 gap-40 max-w-5xl"
+      >
+        <div
+          class="card shadow-xl border bg-base-100 hover:bg-gray-800 hover:text-white transition-colors"
+        >
+          <div class="card-body">
+            <div class="text-center">
+              <h2 class="font-bold text-xl">UKL-UPL/DPLH</h2>
+              <p class="text-sm text-gray-700 my-4">Khusus Luasan</p>
+              <h2 class="font-bold text-2xl">
+                3.500 M<sup>2</sup> - 4.999 M<sup>2</sup>
+              </h2>
+              <h3 class="font-bold">di Jalan Nasional</h3>
+            </div>
+            <hr class="border-[2.5px] border-base-300" />
+            <ol class="list-outside list-decimal ml-4">
+              <li>Penyusunan Dokumen UKL-UPL</li>
+              <li>Pengesahan UKL-UPL</li>
+              <li>Persetujuan Lingkungan Hidup</li>
+              <li>Andalalin (Khusus Jalan Nasional)</li>
+              <li>Pertek Limbah B3 (IPL-B3)</li>
+              <li>Pertek Emisi</li>
+              <li>Pertek Air Limbah (IPAL/IPLC)</li>
+            </ol>
+            <hr class="border-[2.5px] border-base-300" />
+
+            <ul class="list-outside list-disc ml-4">
+              <li>Gratis Konsultasi dengan Tenaga Ahli</li>
+              <li>Gratis Andalalin (Khusus Jalan Nasional)</li>
+              <li>senilai Rp 90.000.000 JT</li>
+              <li>Gratis Pertek Limbah B3</li>
+              <li>senilai Rp 35.000.000 JT</li>
+              <li>Gratis Pertek Emisi</li>
+              <li>senilai Rp 35.000.000</li>
+            </ul>
+
+            <div class="price my-3 mx-auto">
+              <div class="text-sm text-gray-600">
+                <strike>Rp. 260.000.000</strike>
+              </div>
+              <div class="text-4xl font-bold">Rp. 159.000.000</div>
+              <div class="flex justify-center mt-5 w-full">
+                <button class="btn w-full rounded-full">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card shadow-xl border bg-base-100 hover:bg-gray-800 hover:text-white transition-colors"
+        >
+          <div class="card-body">
+            <div class="text-center">
+              <h2 class="font-bold text-xl">UKL-UPL/DPLH</h2>
+              <p class="text-sm text-gray-700 my-4">Khusus Luasan</p>
+              <h2 class="font-bold text-2xl">
+                5.000 M<sup>2</sup> - 9.999 M<sup>2</sup>
+              </h2>
+              <h3 class="font-bold">di Jalan Nasional</h3>
+            </div>
+            <hr class="border-[2.5px] border-base-300" />
+            <ol class="list-outside list-decimal ml-4">
+              <li>Penyusunan Dokumen UKL-UPL</li>
+              <li>Pengesahan UKL-UPL</li>
+              <li>Persetujuan Lingkungan Hidup</li>
+              <li>Andalalin (Khusus Jalan Nasional)</li>
+              <li>Pertek Limbah B3 (IPL-B3)</li>
+              <li>Pertek Emisi</li>
+              <li>Pertek Air Limbah (IPAL/IPLC)</li>
+            </ol>
+            <hr class="border-[2.5px] border-base-300" />
+
+            <ul class="list-outside list-disc ml-4">
+              <li>Gratis Konsultasi dengan Tenaga Ahli</li>
+              <li>Gratis Andalalin (Khusus Jalan Nasional)</li>
+              <li>senilai Rp 110.000.000 JT</li>
+              <li>Gratis Pertek Limbah B3</li>
+              <li>senilai Rp 35.000.000 JT</li>
+              <li>Gratis Pertek Emisi</li>
+              <li>senilai Rp 35.000.000</li>
+            </ul>
+
+            <div class="price my-3 mx-auto">
+              <div class="text-sm text-gray-600">
+                <strike>Rp. 290.000.000</strike>
+              </div>
+              <div class="text-4xl font-bold">Rp. 189.000.000</div>
+              <div class="flex justify-center mt-5 w-full">
+                <button class="btn w-full rounded-full">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cards 2 -->
+      <div
+        x-cloak
+        x-show="activeTab === 'jalan-provinsi'"
+        x-transition:enter="transition ease-out duration-500"
+        x-transition:enter-start="opacity-0 transform scale-95"
+        x-transition:enter-end="opacity-100 transform scale-100"
+        class="container mx-auto p-4 my-10 grid md:grid-cols-2 gap-40 max-w-5xl"
+      >
+        <div
+          class="card shadow-xl border bg-base-100 hover:bg-gray-800 hover:text-white transition-colors"
+        >
+          <div class="card-body">
+            <div class="text-center">
+              <h2 class="font-bold text-xl">UKL-UPL/DPLH</h2>
+              <p class="text-sm text-gray-700 my-4">Khusus Luasan</p>
+              <h2 class="font-bold text-2xl">
+                3.500 M<sup>2</sup> - 4.999 M<sup>2</sup>
+              </h2>
+              <h3 class="font-bold">di Jalan Nasional</h3>
+            </div>
+            <hr class="border-[2.5px] border-base-300" />
+            <ol class="list-outside list-decimal ml-4">
+              <li>Penyusunan Dokumen UKL-UPL</li>
+              <li>Pengesahan UKL-UPL</li>
+              <li>Persetujuan Lingkungan Hidup</li>
+              <li>Andalalin (Khusus Jalan Nasional)</li>
+              <li>Pertek Limbah B3 (IPL-B3)</li>
+              <li>Pertek Emisi</li>
+              <li>Pertek Air Limbah (IPAL/IPLC)</li>
+            </ol>
+            <hr class="border-[2.5px] border-base-300" />
+
+            <ul class="list-outside list-disc ml-4">
+              <li>Gratis Konsultasi dengan Tenaga Ahli</li>
+              <li>Gratis Andalalin (Khusus Jalan Nasional)</li>
+              <li>senilai Rp 90.000.000 JT</li>
+              <li>Gratis Pertek Limbah B3</li>
+              <li>senilai Rp 35.000.000 JT</li>
+              <li>Gratis Pertek Emisi</li>
+              <li>senilai Rp 35.000.000</li>
+            </ul>
+
+            <div class="price my-3 mx-auto">
+              <div class="text-sm text-gray-600">
+                <strike>Rp. 260.000.000</strike>
+              </div>
+              <div class="text-4xl font-bold">Rp. 159.000.000</div>
+              <div class="flex justify-center mt-5 w-full">
+                <button class="btn w-full rounded-full">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card shadow-xl border bg-base-100 hover:bg-gray-800 hover:text-white transition-colors"
+        >
+          <div class="card-body">
+            <div class="text-center">
+              <h2 class="font-bold text-xl">UKL-UPL/DPLH</h2>
+              <p class="text-sm text-gray-700 my-4">Khusus Luasan</p>
+              <h2 class="font-bold text-2xl">
+                5.000 M<sup>2</sup> - 9.999 M<sup>2</sup>
+              </h2>
+              <h3 class="font-bold">di Jalan Nasional</h3>
+            </div>
+            <hr class="border-[2.5px] border-base-300" />
+            <ol class="list-outside list-decimal ml-4">
+              <li>Penyusunan Dokumen UKL-UPL</li>
+              <li>Pengesahan UKL-UPL</li>
+              <li>Persetujuan Lingkungan Hidup</li>
+              <li>Andalalin (Khusus Jalan Nasional)</li>
+              <li>Pertek Limbah B3 (IPL-B3)</li>
+              <li>Pertek Emisi</li>
+              <li>Pertek Air Limbah (IPAL/IPLC)</li>
+            </ol>
+            <hr class="border-[2.5px] border-base-300" />
+
+            <ul class="list-outside list-disc ml-4">
+              <li>Gratis Konsultasi dengan Tenaga Ahli</li>
+              <li>Gratis Andalalin (Khusus Jalan Nasional)</li>
+              <li>senilai Rp 110.000.000 JT</li>
+              <li>Gratis Pertek Limbah B3</li>
+              <li>senilai Rp 35.000.000 JT</li>
+              <li>Gratis Pertek Emisi</li>
+              <li>senilai Rp 35.000.000</li>
+            </ul>
+
+            <div class="price my-3 mx-auto">
+              <div class="text-sm text-gray-600">
+                <strike>Rp. 290.000.000</strike>
+              </div>
+              <div class="text-4xl font-bold">Rp. 189.000.000</div>
+              <div class="flex justify-center mt-5 w-full">
+                <button class="btn w-full rounded-full">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cards 3 -->
+      <div
+        x-cloak
+        x-show="activeTab === 'jalan-kabupaten-kota'"
+        x-transition:enter="transition ease-out duration-500"
+        x-transition:enter-start="opacity-0 transform scale-95"
+        x-transition:enter-end="opacity-100 transform scale-100"
+        class="container mx-auto p-4 my-10 grid md:grid-cols-2 gap-40 max-w-5xl"
+      >
+        <div
+          class="card shadow-xl border bg-base-100 hover:bg-gray-800 hover:text-white transition-colors"
+        >
+          <div class="card-body">
+            <div class="text-center">
+              <h2 class="font-bold text-xl">UKL-UPL/DPLH</h2>
+              <p class="text-sm text-gray-700 my-4">Khusus Luasan</p>
+              <h2 class="font-bold text-2xl">
+                3.500 M<sup>2</sup> - 4.999 M<sup>2</sup>
+              </h2>
+              <h3 class="font-bold">di Jalan Nasional</h3>
+            </div>
+            <hr class="border-[2.5px] border-base-300" />
+            <ol class="list-outside list-decimal ml-4">
+              <li>Penyusunan Dokumen UKL-UPL</li>
+              <li>Pengesahan UKL-UPL</li>
+              <li>Persetujuan Lingkungan Hidup</li>
+              <li>Andalalin (Khusus Jalan Nasional)</li>
+              <li>Pertek Limbah B3 (IPL-B3)</li>
+              <li>Pertek Emisi</li>
+              <li>Pertek Air Limbah (IPAL/IPLC)</li>
+            </ol>
+            <hr class="border-[2.5px] border-base-300" />
+
+            <ul class="list-outside list-disc ml-4">
+              <li>Gratis Konsultasi dengan Tenaga Ahli</li>
+              <li>Gratis Andalalin (Khusus Jalan Nasional)</li>
+              <li>senilai Rp 90.000.000 JT</li>
+              <li>Gratis Pertek Limbah B3</li>
+              <li>senilai Rp 35.000.000 JT</li>
+              <li>Gratis Pertek Emisi</li>
+              <li>senilai Rp 35.000.000</li>
+            </ul>
+
+            <div class="price my-3 mx-auto">
+              <div class="text-sm text-gray-600">
+                <strike>Rp. 260.000.000</strike>
+              </div>
+              <div class="text-4xl font-bold">Rp. 159.000.000</div>
+              <div class="flex justify-center mt-5 w-full">
+                <button class="btn w-full rounded-full">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card shadow-xl border bg-base-100 hover:bg-gray-800 hover:text-white transition-colors"
+        >
+          <div class="card-body">
+            <div class="text-center">
+              <h2 class="font-bold text-xl">UKL-UPL/DPLH</h2>
+              <p class="text-sm text-gray-700 my-4">Khusus Luasan</p>
+              <h2 class="font-bold text-2xl">
+                5.000 M<sup>2</sup> - 9.999 M<sup>2</sup>
+              </h2>
+              <h3 class="font-bold">di Jalan Nasional</h3>
+            </div>
+            <hr class="border-[2.5px] border-base-300" />
+            <ol class="list-outside list-decimal ml-4">
+              <li>Penyusunan Dokumen UKL-UPL</li>
+              <li>Pengesahan UKL-UPL</li>
+              <li>Persetujuan Lingkungan Hidup</li>
+              <li>Andalalin (Khusus Jalan Nasional)</li>
+              <li>Pertek Limbah B3 (IPL-B3)</li>
+              <li>Pertek Emisi</li>
+              <li>Pertek Air Limbah (IPAL/IPLC)</li>
+            </ol>
+            <hr class="border-[2.5px] border-base-300" />
+
+            <ul class="list-outside list-disc ml-4">
+              <li>Gratis Konsultasi dengan Tenaga Ahli</li>
+              <li>Gratis Andalalin (Khusus Jalan Nasional)</li>
+              <li>senilai Rp 110.000.000 JT</li>
+              <li>Gratis Pertek Limbah B3</li>
+              <li>senilai Rp 35.000.000 JT</li>
+              <li>Gratis Pertek Emisi</li>
+              <li>senilai Rp 35.000.000</li>
+            </ul>
+
+            <div class="price my-3 mx-auto">
+              <div class="text-sm text-gray-600">
+                <strike>Rp. 290.000.000</strike>
+              </div>
+              <div class="text-4xl font-bold">Rp. 189.000.000</div>
+              <div class="flex justify-center mt-5 w-full">
+                <button class="btn w-full rounded-full">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tabs -->
+    <div class="bg-base-100">
+      <div
+        class="container mx-auto px-4 py-10 max-w-7xl"
+        x-data="{ activeTab: 1 }"
+      >
+        <div class="tabs">
+          <a
+            class="tab tab-lg tab-bordered transition-all"
+            @click.prevent="activeTab = 1"
+            :class="{ 'tab-active': activeTab === 1 }"
+            href="#tab1"
+            >Persyaratan</a
+          >
+          <a
+            class="tab tab-lg tab-bordered transition-all"
+            @click.prevent="activeTab = 2"
+            :class="{ 'tab-active': activeTab === 2 }"
+            href="#tab2"
+            >Proses Tahapan</a
+          >
+          <a
+            class="tab tab-lg tab-bordered transition-all"
+            @click.prevent="activeTab = 3 "
+            :class="{ 'tab-active': activeTab === 3 }"
+            href="#tab3"
+            >Prosedur</a
+          >
+        </div>
+        <div class="w-full pt-4">
+          <div x-show="activeTab === 1">
+            Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+            cillum sint consectetur cupidatat.
+          </div>
+          <div x-show="activeTab === 2">
+            Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+            reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
+            ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
+            Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
+            voluptate dolor minim nulla est proident. Nostrud officia pariatur
+            ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+            reprehenderit commodo officia dolor Lorem duis laboris cupidatat
+            officia voluptate. Culpa proident adipisicing id nulla nisi laboris
+            ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo
+            ex non excepteur duis sunt velit enim. Voluptate laboris sint
+            cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+          </div>
+          <div x-show="activeTab === 3">
+            Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+            cillum sint consectetur cupidatat.
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- footer -->
     <footer class="bg-base-100">
       <hr />
@@ -199,3 +683,7 @@
   </body>
 </html>
 
+<style>
+  :root {
+  }
+</style>
