@@ -40,7 +40,7 @@
             class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li><a href="./">Beranda</a></li>
-            <li tabindex="0">
+            <!-- <li tabindex="0">
               <a class="justify-between">
                 Pelayanan
                 <svg
@@ -62,20 +62,21 @@
                 <li><a href="pelayanan-sppl.html">SPPL</a></li>
                 <li><a href="pelayanan-pertek.html">PERTEK</a></li>
               </ul>
-            </li>
+            </li> -->
+            <li><a href="jasa.html">Lingkup Jasa</a></li>
             <li><a href="tentang.html">Tentang Kami</a></li>
             <li><a href="kontak.html">Kontak Kami</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost normal-case text-xl font-bold" href="./"
-          >Amdal Logo</a
-        >
+        <a href="./">
+          <img src="img/logo-naztama.png" alt="" />
+        </a>
       </div>
       <!-- navbar desktop -->
       <div class="navbar-center hidden md:flex z-40">
         <ul class="menu menu-horizontal px-1 text-sm">
           <li><a href="./">Beranda</a></li>
-          <li tabindex="0">
+          <!-- <li tabindex="0">
             <a class="peer">
               Pelayanan
               <svg
@@ -99,12 +100,18 @@
               <li><a href="pelayanan-sppl.html">SPPL</a></li>
               <li><a href="pelayanan-pertek.html">PERTEK</a></li>
             </ul>
-          </li>
+          </li> -->
+          <li><a href="jasa.html">Lingkup Jasa</a></li>
           <li><a href="tentang.html">Tentang Kami</a></li>
           <li><a href="kontak.html">Kontak Kami</a></li>
         </ul>
       </div>
-      <a class="btn normal-case">Daftar Sekarang</a>
+      <a
+        class="btn normal-case"
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=6281233477456&text=Halo%20Admin%20Naztama%20Saya%20Ingin%20Berkonsultasi"
+        >Daftar Sekarang</a
+      >
     </div>
 
     <!-- banner -->
@@ -119,43 +126,37 @@
         class="absolute top-0 left-0 w-full h-full flex justify-center items-center"
       >
         <div class="text-center">
-          <h1 class="text-4xl font-bold text-white my-4">Kontak Amdalku</h1>
+          <h1 class="text-4xl font-bold text-white my-4">Kontak Kami</h1>
           <p class="text-white text-2xl my-4">
-            Amdalku.com Konsultan Amdal dan Pengurusan Izin Lingkungan
-            Profesional
+            Jasa Konsultan Profesional, Terpercaya, dan Berpengalaman.
           </p>
           <!-- button "daftar sekarang" -->
-          <div class="flex justify-center">
+          <!-- <div class="flex justify-center">
             <a
               href="#"
               class="btn bg-white text-black hover:text-white btn-md my-4 normal-case border-transparent"
               >Daftar Sekarang</a
             >
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
 
     <!-- grid kontak -->
     <div class="container mx-auto my-12 max-w-6xl grid grid-cols-6">
-      <div class="col-span-4 grid grid-rows-3">
+      <div class="col-span-4 grid grid-rows-4">
+      <img src="img/logo-naztama.png" alt="" class="mx-auto">
         <div class="flex flex-row items-center">
-          <i class="fas fa-thumbs-up fa-4x p-4"></i>
-          <div>
-            Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
-          </div>
+          <i class="fab fa-whatsapp fa-4x p-4"></i>
+          <div class="font-bold text-xl ml-4">081 233 477 456</div>
         </div>
         <div class="flex flex-row items-center">
-          <i class="fas fa-thumbs-up fa-4x p-4"></i>
-          <div>
-            Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
-          </div>
+          <i class="fas fa-phone fa-3x p-4"></i>
+          <div class="font-bold text-xl ml-4">085 648 220 550</div>
         </div>
         <div class="flex flex-row items-center">
-          <i class="fas fa-thumbs-up fa-4x p-4"></i>
-          <div>
-            Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
-          </div>
+          <i class="fas fa-envelope fa-3x p-4"></i>
+          <div class="font-bold text-xl ml-4">naztamabumiraya@gmail.com</div>
         </div>
       </div>
       <div class="col-span-2 block p-4 border-l-2">
@@ -176,10 +177,10 @@
       <div class="container mx-auto p-4 mt-10 max-w-6xl">
         <div class="flex flex-wrap">
           <div class="w-full md:w-2/5 text-center md:text-left">
-            <h5 class="text-xl font-bold mb-6">About Us</h5>
-            <p class="mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              necessitatibus incidunt ut officiis explicabo inventore.
+            <img src="img/logo-naztama.png" alt="" class="mb-4" />
+            <p class="mb-2">JL. KLAMPIS ANOM IV NO. 24 SURABAYA</p>
+            <p class="mb-6 text-sm">
+              Perum Wisma Mukti Blok F58, Surabaya - Jawa Timur
             </p>
             <ul class="flex flex-row justify-center md:justify-start">
               <li class="mr-3">
@@ -208,10 +209,10 @@
             <h5 class="text-xl font-bold mb-6">Tentang Kami</h5>
             <ul class="list-none footer-links">
               <li class="mb-2">
-                <a href="#" class="hover:underline">Tentang Kami</a>
+                <a href="tentang.html" class="hover:underline">Tentang Kami</a>
               </li>
               <li class="mb-2">
-                <a href="#" class="hover:underline">Kontak Kami</a>
+                <a href="kontak.html" class="hover:underline">Kontak Kami</a>
               </li>
             </ul>
           </div>
@@ -219,6 +220,9 @@
             <h5 class="text-xl font-bold mb-6">Layanan</h5>
             <ul class="list-none footer-links">
               <li class="mb-2">
+                <a href="jasa.html" class="hover:underline">Lingkup Jasa</a>
+              </li>
+              <!-- <li class="mb-2">
                 <a href="pelayanan-amdal.html" class="hover:underline">Amdal</a>
               </li>
               <li class="mb-2">
@@ -238,27 +242,27 @@
                 <a href="pelayanan-pertek.html" class="hover:underline"
                   >PERTEK</a
                 >
-              </li>
+              </li> -->
             </ul>
           </div>
           <div class="w-full md:w-1/5 text-center md:text-left">
             <h5 class="text-xl font-bold mb-6">Hubungi Kami</h5>
             <ul class="list-none footer-links">
               <li class="mb-2">
-                <a href="#" class="hover:underline">+62 812 3456 7890</a>
+                <p>081 233 477 456</p>
               </li>
               <li class="mb-2">
-                <a href="#" class="hover:underline">+62 812 3456 7890</a>
+                <p>085 648 220 550</p>
               </li>
               <li class="mb-2">
-                <a href="#" class="hover:underline">+62 812 3456 7890</a>
+                <p>naztamabumiraya@gmail.com</p>
               </li>
             </ul>
           </div>
         </div>
         <div class="flex justify-center md:justify-start mt-6">
           <div class="text-sm text-gray-600">
-            © 2023, estaesta. All Rights Reserved.
+            © 2023, Naztama Bumi Raya. All Rights Reserved.
           </div>
         </div>
       </div>

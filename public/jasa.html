@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html data-theme="">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Naztama Bumi Raya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <!-- Link Swiper's CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-base-200">
+    <!-- navbar -->
+    <div class="navbar max-w-screen-2xl mx-auto">
+      <div class="flex-1">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a href="./">Beranda</a></li>
+            <!-- <li tabindex="0">
+              <a class="justify-between">
+                Pelayanan
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="p-2 bg-white">
+                <li><a href="pelayanan-amdal.html">AMDAL</a></li>
+                <li><a href="pelayanan-ukl-pl.html">UKL-UPL</a></li>
+                <li><a href="pelayanan-delh-dplh.html">DELH-DPLH</a></li>
+                <li><a href="pelayanan-sppl.html">SPPL</a></li>
+                <li><a href="pelayanan-pertek.html">PERTEK</a></li>
+              </ul>
+            </li> -->
+            <li><a href="jasa.html">Lingkup Jasa</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="kontak.html">Kontak Kami</a></li>
+          </ul>
+        </div>
+        <a href="./">
+          <img src="img/logo-naztama.png" alt="" />
+        </a>
+      </div>
+      <!-- navbar desktop -->
+      <div class="navbar-center hidden md:flex z-40">
+        <ul class="menu menu-horizontal px-1 text-sm">
+          <li><a href="./">Beranda</a></li>
+          <!-- <li tabindex="0">
+            <a class="peer">
+              Pelayanan
+              <svg
+                class="fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                />
+              </svg>
+            </a>
+            <ul
+              class="p-2 bg-white scale-0 hover:scale-100 peer-hover:scale-100"
+            >
+              <li><a href="pelayanan-amdal.html">AMDAL</a></li>
+              <li><a href="pelayanan-ukl-pl.html">UKL-UPL</a></li>
+              <li><a href="pelayanan-delh-dplh.html">DELH-DPLH</a></li>
+              <li><a href="pelayanan-sppl.html">SPPL</a></li>
+              <li><a href="pelayanan-pertek.html">PERTEK</a></li>
+            </ul>
+          </li> -->
+          <li><a href="jasa.html">Lingkup Jasa</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="kontak.html">Kontak Kami</a></li>
+        </ul>
+      </div>
+      <a
+        class="btn normal-case"
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=6281233477456&text=Halo%20Admin%20Naztama%20Saya%20Ingin%20Berkonsultasi"
+        >Daftar Sekarang</a
+      >
+    </div>
+    <!-- banner -->
+    <div class="relative">
+      <img
+        class="w-full object-cover h-[85vh]"
+        src="https://www.amdalku.com/img/slider/jasa-konsultan-amdal.jpg"
+        alt=""
+      />
+      <!-- text on top layer of banner -->
+      <div
+        class="absolute top-0 left-0 w-full h-full flex justify-center items-center"
+      >
+        <div class="text-center">
+          <h1 class="text-4xl font-bold text-white my-4">Lingkup Jasa</h1>
+          <p class="text-white text-2xl my-4">
+            Naztama Bumi Raya menangani berbagai jasa konsultasi
+          </p>
+          <!-- button "daftar sekarang" -->
+          <div class="flex justify-center">
+            <a
+              href="#"
+              class="btn bg-white text-black hover:text-white btn-md my-4 normal-case border-transparent"
+              >Daftar Sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section -->
+    <section class="">
+      <div class="mx-auto max-w-6xl px-6 py-8 sm:py-12 sm:px-6 lg:px-8">
+        <div class="gap-8">
+          <div class="col-span-5">
+            <ol class="list-decimal ml-5">
+              <li class="text-3xl font-bold sm:text-4xl">
+                Konsultansi Penyusunan Dokumen Lingkungan
+              </li>
+            </ol>
+            <ul class="mt-4 text-gray-600 list-disc ml-4 [&>li]:my-1">
+              <li>
+                Penyusunan Dokumen AMDAL / Upaya Pengelolaan Lingkungan – Upaya
+                Pemantauan Lingkungan ( UKL – UPL ) / Surat Pernyataan
+                Pengelolaan Lingkungan ( SPPL )
+                <a href="#" target="_blank" class="underline text-blue-500"
+                  >informasi selengkapnya</a
+                >
+              </li>
+              <li>
+                Kajian Rona Lingkungan Awal / EBA (Environmental Baseline
+                Assessment)
+              </li>
+              <li>
+                Laporan Pelaksanaan / Pemantauan Lingkungan Hidup ; Laporan
+                Implementasi Pelaksanaan RKL – RPL / UKL – UPL
+                <a href="#" target="_blank" class="underline text-blue-500"
+                  >informasi selengkapnya</a
+                >
+              </li>
+              <li>
+                Studi Kelayakan Lingkungan & Sosial ( Environmental & Social
+                Feasibility Study )
+              </li>
+              <li>Dokumen Perhitungan Beban Pencemar Suatu Industri</li>
+              <li>Dokumen Verifikasi Data Lingkungan Suatu Industri</li>
+              <li>
+                Konsultasi dan Pengurusan Izin Gangguan ( Izin HO ) beserta
+                dokumen pendukungnya ( SKRK & IMB )
+                <a href="#" target="_blank" class="underline text-blue-500"
+                  >informasi selengkapnya</a
+                >
+              </li>
+              <li>Penyusunan dan Pengurusan Kajian Drainase</li>
+              <li>
+                Penyusunan dan Pengurusan Dokumen & Rekomendasi Kajian Lalu
+                Lintas ( Pengaturan Lalu Lintas dan ANDALALIN )
+              </li>
+              <li>
+                Konsultansi dan Pengurusan Dokumen Lingkungan Hidup lainnya
+                Sesuai Peraturan Perundangan yang Berlaku.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section -->
+    <section class="">
+      <div
+        class="mx-auto max-w-screen-xl px-6 py-8 sm:py-12 sm:px-6 lg:pb-16 lg:px-8"
+      >
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-16">
+          <div
+            class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full col-span-5"
+          >
+            <img
+              alt=""
+              src="https://images.unsplash.com/photo-1610079874911-4487134bc8b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=480&q=80"
+              class="absolute inset-0 h-fit my-auto w-full object-cover"
+            />
+          </div>
+
+          <div class="col-span-7">
+            <ol class="list-decimal ml-5" start="2">
+              <li class="text-3xl font-bold sm:text-4xl">
+                Konsultansi Pengelolaan Limbah B3
+              </li>
+            </ol>
+            <ul class="mt-4 list-disc list-outside text-gray-600 ml-4">
+              <li>Identifikasi Jenis dan Karakteristik Limbah B3</li>
+              <li>
+                Penyusunan Sistem Pengelolaan Limbah B3 (SOP / Handling ) suatu
+                Industri
+              </li>
+              <li>
+                Konsultansi Teknis dan Desain Perancangan Bangunan Tempat
+                Penyimpanan Sementara ( TPS ) Limbah B3
+              </li>
+              <li>Pekerjaan Konstruksi Bangunan TPS Limbah B3</li>
+              <li>
+                Konsultansi dan Pengurusan Izin TPS Limbah B3
+                <a href="#" target="_blank" class="underline text-blue-500"
+                  >informasi selengkapnya</a
+                >
+              </li>
+              <li>
+                Konsultansi dan Pengurusan Izin Pengumpulan / Pengangkutan
+                Limbah B3, Izin Pemanfaatan / Pengolahan / Pemusnahan Limbah B3
+                <a href="#" target="_blank" class="underline text-blue-500"
+                  >informasi selengkapnya</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section -->
+    <section class="bg-base-100">
+      <div class="mx-auto max-w-screen-xl px-6 pt-8 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-8 lg:gap-16">
+          <div
+            class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full col-span-3"
+          >
+            <img
+              alt=""
+              src="https://images.unsplash.com/photo-1533077162801-86490c593afb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=480&q=80"
+              class="absolute inset-0 h-fit my-auto w-full object-cover rounded-lg shadow-lg"
+            />
+          </div>
+
+          <div class="lg:py-8 col-span-5">
+            <ol class="list-decimal ml-5" start="3">
+              <li class="text-3xl font-bold sm:text-4xl">
+                Konsultansi Pengelolaan Air Bersih dan Air Minum
+              </li>
+            </ol>
+            <ul class="mt-4 text-gray-600 list-disc ml-4 [&>li]:my-1">
+              <li>Desain dan Perencanaan Bangunan Pengolahan Air Bersih</li>
+              <li>Sistem Penyediaan Air Minum</li>
+              <li>Optimasi Instalasi Pengolahan Air Minum.</li>
+            </ul>
+            <ol class="list-decimal ml-5" start="4">
+              <li class="text-3xl font-bold sm:text-4xl my-4">
+                Konsultansi Pengolahan Limbah Cair
+              </li>
+            </ol>
+            <ul class="ml-4 list-disc list-outside text-gray-600">
+              <li>Desain dan Perencanaan Bangunan Pengolahan Limbah Cair</li>
+              <li>Pekerjaan Konstruksi Bangunan Pengolahan Limbah Cair</li>
+              <li>Optimalisasi Pengolahan Limbah Cair</li>
+              <li>
+                Pengurusan Izin IPLC (Instalasi Pengolahan Limbah Cair).<a
+                  href="#"
+                  target="_blank"
+                  class="underline text-blue-500"
+                  >informasi selengkapnya</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section -->
+    <section class="">
+      <div
+        class="mx-auto max-w-screen-xl px-6 py-8 sm:py-12 sm:px-6 lg:pb-16 lg:px-8"
+      >
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-16">
+          <div
+            class="relative h-64 overflow-hidden sm:h-80 lg:h-full col-span-5"
+          >
+            <img
+              alt=""
+              src="https://images.pexels.com/photos/5131196/pexels-photo-5131196.jpeg?auto=compress&cs=tinysrgb&w=480&dpr=1"
+              class="absolute inset-0 h-fit my-auto w-full object-cover rounded-lg shadow-lg"
+            />
+          </div>
+
+          <div class="col-span-7">
+            <ol class="ml-5 list-decimal" start="5">
+              <li class="text-3xl font-bold sm:text-4xl">
+                Management Pengelolaan Sampah
+              </li>
+            </ol>
+            <ul class="mt-4 text-gray-600 list-disc ml-4 [&>li]:my-1">
+              <li>
+                Identifikasi Karakteristik, Timbulan & Volume Sampah Industri
+              </li>
+              <li>System pengelolaan sampah Industri</li>
+            </ul>
+            <ol class="ml-5 list-decimal" start="6">
+              <li class="text-3xl font-bold sm:text-4xl mb-4 mt-8">
+                Audit Lingkungan, PROPER KLH dan Pelatihan Lingkungan
+              </li>
+            </ol>
+            <ul class="ml-4 list-disc list-outside text-gray-600">
+              <li>Jasa Konsultansi Audit Lingkungan</li>
+              <li>Konsultansi dan Pendampingan Proper KLHK Perusahaan</li>
+              <li>
+                Pelatihan / Training Pengelolaan Management Lingkungan
+                Perusahaan
+              </li>
+              <li>
+                Pelatihan / Training Pengelolaan Limbah Bahan Berbahaya dan
+                Beracun (B3) Perusahaan
+              </li>
+              <li>Konsultansi dan/Atau Perencanaan Urban.</li>
+              <li>Konsultansi dan Pendampingan Proper Perusahaan</li>
+              <li>
+                Pembuatan Program Sistem Database Pemetaan Sumber Pencemar dari
+                Kegiatan Usaha / Industri.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section -->
+    <section class="bg-gray-700">
+      <div class="container mx-auto py-8 text-base-100 px-4 max-w-5xl">
+        <h1 class="text-4xl font-bold mb-8">Mengapa Memilih Jasa Kami?</h1>
+        <ul class="list-disc pl-6 [&>li]:my-4 px-6 text-justify">
+          <li>
+            Kami memiliki pengalaman luas dalam sistem birokrasi di
+            Pemerintahan, terutama di Pemerintahan Kota Surabaya (Pengalaman
+            bekerja di Badan Lingkungan Hidup Kota Surabaya).
+          </li>
+          <li>
+            Kami ahli dalam menyusun dokumen lingkungan dan pekerjaan di bidang
+            lingkungan lainnya, serta telah memiliki sertifikat keahlian
+            Lingkungan dari Intakindo/Inkindo.
+          </li>
+          <li>
+            Kami merupakan konsultan resmi yang terdaftar di dalam database
+            Daftar Konsultan Badan Lingkungan Hidup Kota Surabaya.
+          </li>
+          <li>
+            Kami adalah konsultan langsung yang menyusun pekerjaan proyek, bukan
+            biro jasa atau makelar yang sering kali melibatkan pihak lain yang
+            belum tentu kompeten.
+          </li>
+          <li>
+            Seluruh tim kerja kami merupakan alumni Teknik Lingkungan ITS
+            Surabaya yang diakui kapabilitasnya dalam menyusun dokumen dan
+            pekerjaan di bidang lingkungan.
+          </li>
+          <li>Kami menjamin waktu pengerjaan yang cepat dan tepat waktu.</li>
+          <li>
+            Kami memiliki pengalaman dan latar belakang yang kuat sebagai
+            praktisi dan tenaga ahli lingkungan.
+          </li>
+          <li>
+            Legalitas badan usaha kami jelas dengan Akta Notaris, NPWP, SIUP,
+            TDP, SKA Keahlian, dan sertifikat-sertifikat pendukung lainnya.
+          </li>
+          <li>
+            Kami memberikan garansi 100% tanpa syarat yang tercantum dalam Surat
+            Perjanjian Kerjasama bermaterai.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-base-100">
+      <hr />
+      <div class="container mx-auto p-4 mt-10 max-w-6xl">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-2/5 text-center md:text-left">
+            <img src="img/logo-naztama.png" alt="" class="mb-4" />
+            <p class="mb-2">JL. KLAMPIS ANOM IV NO. 24 SURABAYA</p>
+            <p class="mb-6 text-sm">
+              Perum Wisma Mukti Blok F58, Surabaya - Jawa Timur
+            </p>
+            <ul class="flex flex-row justify-center md:justify-start">
+              <li class="mr-3">
+                <a href="#" class="hover:text-gray-800">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="mr-3">
+                <a href="#" class="hover:text-gray-800">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="mr-3">
+                <a href="#" class="hover:text-gray-800">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="mr-3">
+                <a href="#" class="hover:text-gray-800">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/5 text-center md:text-left">
+            <h5 class="text-xl font-bold mb-6">Tentang Kami</h5>
+            <ul class="list-none footer-links">
+              <li class="mb-2">
+                <a href="tentang.html" class="hover:underline">Tentang Kami</a>
+              </li>
+              <li class="mb-2">
+                <a href="kontak.html" class="hover:underline">Kontak Kami</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/5 text-center md:text-left">
+            <h5 class="text-xl font-bold mb-6">Layanan</h5>
+            <ul class="list-none footer-links">
+              <li class="mb-2">
+                <a href="jasa.html" class="hover:underline">Lingkup Jasa</a>
+              </li>
+              <!-- <li class="mb-2">
+                <a href="pelayanan-amdal.html" class="hover:underline">Amdal</a>
+              </li>
+              <li class="mb-2">
+                <a href="pelayanan-ukl-pl.html" class="hover:underline"
+                  >UKL-UPL</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="pelayanan-delh-dplh.html" class="hover:underline"
+                  >DELH-DPLH</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="pelayanan-sppl.html" class="hover:underline">SPPL</a>
+              </li>
+              <li class="mb-2">
+                <a href="pelayanan-pertek.html" class="hover:underline"
+                  >PERTEK</a
+                >
+              </li> -->
+            </ul>
+          </div>
+          <div class="w-full md:w-1/5 text-center md:text-left">
+            <h5 class="text-xl font-bold mb-6">Hubungi Kami</h5>
+            <ul class="list-none footer-links">
+              <li class="mb-2">
+                <p>081 233 477 456</p>
+              </li>
+              <li class="mb-2">
+                <p>085 648 220 550</p>
+              </li>
+              <li class="mb-2">
+                <p>naztamabumiraya@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-center md:justify-start mt-6">
+          <div class="text-sm text-gray-600">
+            © 2023, Naztama Bumi Raya. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -2,6 +2,7 @@
 <html data-theme="">
   <head>
     <meta charset="UTF-8" />
+    <title>Naztama Bumi Raya</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="output.css" rel="stylesheet" />
     <!-- Link Swiper's CSS -->
@@ -11,7 +12,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
   <body class="bg-base-200">
@@ -40,7 +41,7 @@
             class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li><a href="./">Beranda</a></li>
-            <li tabindex="0">
+            <!-- <li tabindex="0">
               <a class="justify-between">
                 Pelayanan
                 <svg
@@ -62,20 +63,21 @@
                 <li><a href="pelayanan-sppl.html">SPPL</a></li>
                 <li><a href="pelayanan-pertek.html">PERTEK</a></li>
               </ul>
-            </li>
+            </li> -->
+            <li><a href="jasa.html">Lingkup Jasa</a></li>
             <li><a href="tentang.html">Tentang Kami</a></li>
             <li><a href="kontak.html">Kontak Kami</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost normal-case text-xl font-bold" href="./"
-          >Amdal Logo</a
-        >
+        <a href="./">
+          <img src="img/logo-naztama.png" alt="" />
+        </a>
       </div>
       <!-- navbar desktop -->
       <div class="navbar-center hidden md:flex z-40">
         <ul class="menu menu-horizontal px-1 text-sm">
           <li><a href="./">Beranda</a></li>
-          <li tabindex="0">
+          <!-- <li tabindex="0">
             <a class="peer">
               Pelayanan
               <svg
@@ -99,16 +101,22 @@
               <li><a href="pelayanan-sppl.html">SPPL</a></li>
               <li><a href="pelayanan-pertek.html">PERTEK</a></li>
             </ul>
-          </li>
+          </li> -->
+          <li><a href="jasa.html">Lingkup Jasa</a></li>
           <li><a href="tentang.html">Tentang Kami</a></li>
           <li><a href="kontak.html">Kontak Kami</a></li>
         </ul>
       </div>
-      <a class="btn normal-case">Daftar Sekarang</a>
+      <a
+        class="btn normal-case"
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=6281233477456&text=Halo%20Admin%20Naztama%20Saya%20Ingin%20Berkonsultasi"
+        >Daftar Sekarang</a
+      >
     </div>
 
     <!-- Swiper -->
-    <div class="swiper h-[60vh] md:h-[85vh]">
+    <div class="swiper swiperx h-[60vh] md:h-[85vh]">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img
@@ -122,10 +130,14 @@
           <div class="absolute inset-0 flex justify-start items-center">
             <div class="w-1/12 min-w-[44px]"></div>
             <div class="text-white max-w-xl mr-[44px]">
-              <h1 class="text-6xl font-bold">Lorem</h1>
-              <p class="text-md">
-                Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
-                sint cillum sint consectetur cupidatat.
+              <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                Profesional & Terpercaya
+              </h1>
+              <p class="text-md line-clamp-3 md:line-clamp-none">
+                Kami memiliki pengalaman dalam sistem birokrasi pemerintahan di
+                Kota Surabaya dan Jawa Timur. Kami berpengalaman dalam menyusun
+                dokumen lingkungan dan telah bekerja dengan
+                perusahaan-perusahaan besar.
               </p>
               <div class="btn bg-white text-black mt-4">Daftar Sekarang</div>
             </div>
@@ -143,10 +155,39 @@
           <div class="absolute inset-0 flex justify-start items-center">
             <div class="w-1/12 min-w-[44px]"></div>
             <div class="text-white max-w-xl mr-[44px]">
-              <h1 class="text-6xl font-bold">Lorem</h1>
-              <p class="text-md">
-                Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
-                sint cillum sint consectetur cupidatat.
+              <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                Legalitas & Kompetensi
+              </h1>
+              <p class="text-md line-clamp-3 md:line-clamp-none">
+                Kami merupakan konsultan profesional dan berpengalaman dengan
+                legalitas yang lengkap. Selain itu kami juga mempunyai
+                sertifikasi keahlian kompetensi yang terdaftar di LPJK serta
+                lembaga - lembaga resmi lainnya.
+              </p>
+              <div class="btn bg-white text-black mt-4">Daftar Sekarang</div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://images.unsplash.com/photo-1596652461678-60d65fc6d8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-black from-50% to-transparent opacity-50"
+          ></div>
+          <div class="absolute inset-0 flex justify-start items-center">
+            <div class="w-1/12 min-w-[44px]"></div>
+            <div class="text-white max-w-xl mr-[44px]">
+              <h1 class="text-3xl md:text-6xl font-bold mb-4">
+                Cepat dan Tepat Waktu
+              </h1>
+              <p class="text-md line-clamp-3 md:line-clamp-none">
+                Waktu pengerjaan cepat dan tepat waktu. Seluruh Team
+                berpengalaman dan merupakan alumni Teknik Lingkungan ITS
+                Surabaya yang telah diakui kapabilitasnya dalam menyusun dokumen
+                lingkungan ataupun pekerjaan di bidang lingkungan
               </p>
               <div class="btn bg-white text-black mt-4">Daftar Sekarang</div>
             </div>
@@ -154,21 +195,20 @@
         </div>
         <div class="swiper-slide object-none">
           <img
-            src="https://images.unsplash.com/photo-1596652461678-60d65fc6d8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            src="http://www.naztamabumiraya.com/wp-content/uploads/2016/02/logoklien-2.jpg"
             alt=""
             class="w-full h-full object-cover"
           />
           <div
-            class="absolute inset-0 bg-gradient-to-r from-black from-50% to-transparent opacity-25"
+            class="absolute inset-0 bg-gradient-to-r from-black from-40% to-transparent opacity-25"
           ></div>
           <div class="absolute inset-0 flex justify-start items-center">
             <div class="w-1/12 min-w-[44px]"></div>
             <div class="text-white max-w-xl mr-[44px]">
-              <h1 class="text-6xl font-bold">Lorem</h1>
-              <p class="text-md">
-                Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
-                sint cillum sint consectetur cupidatat.
-              </p>
+              <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                Dipercaya Puluhan Perusahaan Besar
+              </h1>
+              <p class="text-md"></p>
               <div class="btn bg-white text-black mt-4">Daftar Sekarang</div>
             </div>
           </div>
@@ -179,86 +219,312 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <div
-      class="container mx-auto p-4 my-10 max-w-6xl grid md:grid-cols-2 gap-4"
-    >
-      <div>
-        <h1 class="text-4xl font-bold">Amdal Logo</h1>
-        <p class="my-2">
-          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
-          cillum sint consectetur cupidatat.
-        </p>
-        <p class="my-2">
-          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
-          cillum sint consectetur cupidatat.
-        </p>
-        <div class="btn min-h-6 h-8 my-2">Tentang</div>
-      </div>
-      <div class="grid grid-row-3 gap-2">
-        <div class="flex flex-row">
-          <div class="w-3/12 flex justify-center">
-            <i class="fas fa-check-square fa-4x p-2"></i>
-          </div>
-          <div class="w-full h-full">
-            <div class="font-bold">Mudah</div>
-            <div>
-              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
-              sint cillum sint consectetur cupidatat.
-            </div>
-          </div>
+    <div class="container mx-auto p-4 py-20 max-w-6xl">
+      <div class="grid md:grid-cols-2">
+        <!-- <h1 class="text-4xl font-bold">Amdal Logo</h1> -->
+        <div class="flex justify-center items-center">
+          <img src="img/logo-naztama-upscale.png" alt="" class="mx-auto" />
         </div>
-        <div class="flex flex-row">
-          <div class="w-3/12 flex justify-center">
-            <i class="fas fa-certificate fa-4x p-2"></i>
-          </div>
-          <div class="w-full h-full">
-            <div class="font-bold">Profesional</div>
-            <div>
-              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
-              sint cillum sint consectetur cupidatat.
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-row">
-          <div class="w-3/12 flex justify-center">
-            <i class="fas fa-thumbs-up fa-4x p-2"></i>
-          </div>
-          <div class="w-full h-full">
-            <div class="font-bold">Terpercaya</div>
-            <div>
-              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
-              sint cillum sint consectetur cupidatat.
-            </div>
-          </div>
+        <div>
+          <p class="my-4 font-bold">
+            Jasa Konsultan Profesional, Terpercaya, dan Berpengalaman.
+          </p>
+          <p class="my-4">
+            Naztama Bumi Raya berdiri sebagai konsultan lingkungan yang
+            berkomitmen tinggi untuk memberikan solusi terbaik terhadap setiap
+            permasalahan lingkungan yang ada. Responsif dan cepat merupakan
+            prinsip kami dalam bekerja.
+          </p>
+          <a href="tentang.html" class="btn min-h-6 h-8 my-2 normal-case"
+            >Tentang kami</a
+          >
         </div>
       </div>
     </div>
     <div class="bg-gray-700">
-      <div class="container mx-auto p-4 my-10 max-w-6xl text-white text-center">
-        <div class="text-3xl font-bold my-7">
-          AMDALKU langkah pertama sukseskan usaha anda
+      <div class="container mx-auto p-4 py-20 max-w-6xl text-white">
+        <div class="text-3xl font-bold my-7 text-center">
+          Mengapa Harus Memilih Kami ?
         </div>
-        <div class="my-7">
-          Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
-          enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
-          exercitation amet. Nisi anim cupidatat excepteur officia.
-          Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
-          voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
-          officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
-          commodo officia dolor Lorem duis laboris cupidatat officia voluptate.
-          Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis
-          officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis
-          sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-          consectetur et est culpa et culpa duis.
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-justify">
+          <div class="flex flex-col">
+            <div class="flex justify-center items-center my-4">
+              <i class="fa fa-thumbs-up fa-4x p-2"></i>
+            </div>
+            <div class="w-full h-full">
+              <div class="font-bold">Profesional & Terpercaya</div>
+              <div>
+                Kami merupakan konsultan profesional dan berpengalaman dengan
+                legalitas yang lengkap. Selain itu kami juga mempunyai
+                sertifikasi keahlian kompetensi yang terdaftar di LPJK serta
+                lembaga - lembaga resmi lainnya.
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex justify-center items-center my-4">
+              <i class="fa fa-file fa-4x p-2"></i>
+            </div>
+            <div class="w-full h-full">
+              <div class="font-bold">Legalitas & Kompetensi</div>
+              <div>
+                Kami merupakan konsultan profesional dan berpengalaman dengan
+                legalitas yang lengkap. Selain itu kami juga mempunyai
+                sertifikasi keahlian kompetensi yang terdaftar di LPJK serta
+                lembaga - lembaga resmi lainnya.
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex justify-center items-center my-4">
+              <i class="fa-solid fa-clock fa-4x p-2"></i>
+            </div>
+            <div class="w-full h-full">
+              <div class="font-bold">Cepat dan Tepat Waktu</div>
+              <div>
+                Waktu pengerjaan cepat dan tepat waktu. Seluruh Team
+                berpengalaman dan merupakan alumni Teknik Lingkungan ITS
+                Surabaya yang telah diakui kapabilitasnya dalam menyusun dokumen
+                lingkungan ataupun pekerjaan di bidang lingkungan
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="text-center font-bold text-3xl pb-4">
-      Biaya Hemat, Kualitas Hebat. Rekomendasi Paket Terbaik
+
+    <!-- 3x3 grid -->
+    <div class="container mx-auto p-4 my-10 max-w-6xl">
+      <div class="text-4xl font-bold text-center">
+        Dipercaya Puluhan Perusahaan Besar
+      </div>
+      <!-- <div class="text-2xl font-bold text-center">Perusahaan Besar</div> -->
+      <div class="grid grid-cols-3 lg:grid-cols-5 gap-2 md:gap-10 mt-10">
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/1.-Exxon-Mobil-Cepu-Ltd.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/2.-Waskita-Karya-Tbk-Persero-.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/telkomsel.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/4-akr-corporindo.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/kimia-farma.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/6.-PT.-Pembangkit-Jawa-Bali-Tbk.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/telkom.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/mcdonald.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/lg-elctronic-indonesia.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/10.-PT.-Terminal-Teluk-Lamong.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/11.-PT.-Bayer-Indonesia.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/12.-Toyota-Auto2000.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/13.-Karaoke-Resto-HapPub.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/14.-PT.-Amerta-Indah-Otsuka.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border">
+          <div class="card-body">
+            <img src="img/bank-bni.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- gradient so the last grid row only shows top half -->
+      <!-- class="absolute inset-0 bg-gradient-to-r from-black from-50% to-transparent opacity-50" -->
     </div>
 
+    <!-- 3x3 grid -->
+    <div class="container mx-auto p-4 my-10 max-w-6xl">
+      <!-- <div class="text-4xl font-bold text-center">Dipercaya Puluhan Perusahaan Besar</div> -->
+      <!-- <!-- <div class="text-2xl font-bold text-center">Perusahaan Besar</div> -->
+      <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10"> -->
+      <!--   <div class="card bg-base-100 shadow-xl border"> -->
+      <!--     <div class="card-body"> -->
+      <!--       <div class="grid grid-cols-3 col-auto"> -->
+      <!--         <div class="flex justify-center"> -->
+      <!--           <i class="fas fa-check-square fa-4x p-2"></i> -->
+      <!--         </div> -->
+      <!--         <div class="col-span-2"> -->
+      <!--           <h2 class="card-title">AMDAL</h2> -->
+      <!--           <p class="text-sm"> -->
+      <!--             Analisis Mengenai Dampak Lingkungan untuk mengidentifikasi -->
+      <!--             dampak besar dari pembangunan -->
+      <!--           </p> -->
+      <!--         </div> -->
+      <!--       </div> -->
+      <!--       <div class="card-actions justify-center"> -->
+      <!--         <button class="btn btn-ghost btn-wide"> -->
+      <!--           Buy Now -->
+      <!--           <i class="fas fa-arrow-right ml-4"></i> -->
+      <!--         </button> -->
+      <!--       </div> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!--   <div class="card bg-base-100 shadow-xl border"> -->
+      <!--     <div class="card-body"> -->
+      <!--       <div class="grid grid-cols-3 col-auto"> -->
+      <!--         <div class="flex justify-center"> -->
+      <!--           <i class="fas fa-check-square fa-4x p-2"></i> -->
+      <!--         </div> -->
+      <!--         <div class="col-span-2"> -->
+      <!--           <h2 class="card-title">UKL-UPL</h2> -->
+      <!--           <p class="text-sm"> -->
+      <!--             Mengkaji komponen lingkungan yang mungkin akan terkena dampak -->
+      <!--             kecil dari suatu kegiatan/ bangunan -->
+      <!--           </p> -->
+      <!--         </div> -->
+      <!--       </div> -->
+      <!--       <div class="card-actions justify-center"> -->
+      <!--         <button class="btn btn-ghost btn-wide"> -->
+      <!--           Buy Now -->
+      <!--           <i class="fas fa-arrow-right ml-4"></i> -->
+      <!--         </button> -->
+      <!--       </div> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!--   <div class="card bg-base-100 shadow-xl border"> -->
+      <!--     <div class="card-body"> -->
+      <!--       <div class="grid grid-cols-3 col-auto"> -->
+      <!--         <div class="flex justify-center"> -->
+      <!--           <i class="fas fa-check-square fa-4x p-2"></i> -->
+      <!--         </div> -->
+      <!--         <div class="col-span-2"> -->
+      <!--           <h2 class="card-title">DELH-DPLH</h2> -->
+      <!--           <p class="text-sm"> -->
+      <!--             Pengelolaan lingkungan bagi usaha yang sudah berjalan namun -->
+      <!--             belum memiliki AMDAL atau UKL-UPL -->
+      <!--           </p> -->
+      <!--         </div> -->
+      <!--       </div> -->
+      <!--       <div class="card-actions justify-center"> -->
+      <!--         <button class="btn btn-ghost btn-wide"> -->
+      <!--           Buy Now -->
+      <!--           <i class="fas fa-arrow-right ml-4"></i> -->
+      <!--         </button> -->
+      <!--       </div> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!--   <div class="card bg-base-100 shadow-xl border"> -->
+      <!--     <div class="card-body"> -->
+      <!--       <div class="grid grid-cols-3 col-auto"> -->
+      <!--         <div class="flex justify-center"> -->
+      <!--           <i class="fas fa-check-square fa-4x p-2"></i> -->
+      <!--         </div> -->
+      <!--         <div class="col-span-2"> -->
+      <!--           <h2 class="card-title">SPPL</h2> -->
+      <!--           <p class="text-sm"> -->
+      <!--             Surat Pernyataan Kesanggupan Pengelolaan dan Pemantauan -->
+      <!--             Lingkungan Hidup -->
+      <!--           </p> -->
+      <!--         </div> -->
+      <!--       </div> -->
+      <!--       <div class="card-actions justify-center"> -->
+      <!--         <button class="btn btn-ghost btn-wide"> -->
+      <!--           Buy Now -->
+      <!--           <i class="fas fa-arrow-right ml-4"></i> -->
+      <!--         </button> -->
+      <!--       </div> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!--   <div class="card bg-base-100 shadow-xl border"> -->
+      <!--     <div class="card-body"> -->
+      <!--       <div class="grid grid-cols-3 col-auto"> -->
+      <!--         <div class="flex justify-center"> -->
+      <!--           <i class="fas fa-check-square fa-4x p-2"></i> -->
+      <!--         </div> -->
+      <!--         <div class="col-span-2"> -->
+      <!--           <h2 class="card-title">PERTEK Lingkungan</h2> -->
+      <!--           <p class="text-sm"> -->
+      <!--             Terbagi menjadi 3 Pertek, Pertek air limbah, Pertek emisi dan -->
+      <!--             Pertek B3. -->
+      <!--           </p> -->
+      <!--         </div> -->
+      <!--       </div> -->
+      <!--       <div class="card-actions justify-center"> -->
+      <!--         <button class="btn btn-ghost btn-wide"> -->
+      <!--           Buy Now -->
+      <!--           <i class="fas fa-arrow-right ml-4"></i> -->
+      <!--         </button> -->
+      <!--       </div> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!--   <div class="card bg-base-100 shadow-xl border"> -->
+      <!--     <div class="card-body"> -->
+      <!--       <div class="grid grid-cols-3 col-auto"> -->
+      <!--         <div class="flex justify-center"> -->
+      <!--           <i class="fas fa-check-square fa-4x p-2"></i> -->
+      <!--         </div> -->
+      <!--         <div class="col-span-2"> -->
+      <!--           <h2 class="card-title">Monitoring RKL-RPL</h2> -->
+      <!--           <p class="text-sm"> -->
+      <!--             Pemantauan dan evaluasi lingkungan hidup per semester (6 -->
+      <!--             bulan) -->
+      <!--           </p> -->
+      <!--         </div> -->
+      <!--       </div> -->
+      <!--       <div class="card-actions justify-center"> -->
+      <!--         <button class="btn btn-ghost btn-wide"> -->
+      <!--           Buy Now -->
+      <!--           <i class="fas fa-arrow-right ml-4"></i> -->
+      <!--         </button> -->
+      <!--       </div> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!-- </div> -->
+    </div>
+
+    <!-- <div class="text-center font-bold text-3xl pb-4">
+      Biaya Hemat, Kualitas Hebat. Rekomendasi Paket Terbaik
+    </div> -->
     <!-- card -->
-    <div
+    <!-- <div
       class="container mx-auto p-4 mb-10 grid md:grid-cols-2 gap-4 max-w-6xl justify-items-center"
     >
       <div
@@ -355,154 +621,10 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- 3x3 grid -->
-    <div class="container mx-auto p-4 my-10 max-w-6xl">
-      <div class="text-2xl font-bold text-center">
-        Lindungi Lingkungan Sekaligus Bisnis Anda
-      </div>
-      <div class="text-2xl font-bold text-center">
-        Dengan Perlindungan Hukum Maksimal
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-        <div class="card bg-base-100 shadow-xl border">
-          <div class="card-body">
-            <div class="grid grid-cols-3 col-auto">
-              <div class="flex justify-center">
-                <i class="fas fa-check-square fa-4x p-2"></i>
-              </div>
-              <div class="col-span-2">
-                <h2 class="card-title">AMDAL</h2>
-                <p class="text-sm">
-                  Analisis Mengenai Dampak Lingkungan untuk mengidentifikasi
-                  dampak besar dari pembangunan
-                </p>
-              </div>
-            </div>
-            <div class="card-actions justify-center">
-              <button class="btn btn-ghost btn-wide">
-                Buy Now
-                <i class="fas fa-arrow-right ml-4"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-base-100 shadow-xl border">
-          <div class="card-body">
-            <div class="grid grid-cols-3 col-auto">
-              <div class="flex justify-center">
-                <i class="fas fa-check-square fa-4x p-2"></i>
-              </div>
-              <div class="col-span-2">
-                <h2 class="card-title">UKL-UPL</h2>
-                <p class="text-sm">
-                  Mengkaji komponen lingkungan yang mungkin akan terkena dampak
-                  kecil dari suatu kegiatan/ bangunan
-                </p>
-              </div>
-            </div>
-            <div class="card-actions justify-center">
-              <button class="btn btn-ghost btn-wide">
-                Buy Now
-                <i class="fas fa-arrow-right ml-4"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-base-100 shadow-xl border">
-          <div class="card-body">
-            <div class="grid grid-cols-3 col-auto">
-              <div class="flex justify-center">
-                <i class="fas fa-check-square fa-4x p-2"></i>
-              </div>
-              <div class="col-span-2">
-                <h2 class="card-title">DELH-DPLH</h2>
-                <p class="text-sm">
-                  Pengelolaan lingkungan bagi usaha yang sudah berjalan namun
-                  belum memiliki AMDAL atau UKL-UPL
-                </p>
-              </div>
-            </div>
-            <div class="card-actions justify-center">
-              <button class="btn btn-ghost btn-wide">
-                Buy Now
-                <i class="fas fa-arrow-right ml-4"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-base-100 shadow-xl border">
-          <div class="card-body">
-            <div class="grid grid-cols-3 col-auto">
-              <div class="flex justify-center">
-                <i class="fas fa-check-square fa-4x p-2"></i>
-              </div>
-              <div class="col-span-2">
-                <h2 class="card-title">SPPL</h2>
-                <p class="text-sm">
-                  Surat Pernyataan Kesanggupan Pengelolaan dan Pemantauan
-                  Lingkungan Hidup
-                </p>
-              </div>
-            </div>
-            <div class="card-actions justify-center">
-              <button class="btn btn-ghost btn-wide">
-                Buy Now
-                <i class="fas fa-arrow-right ml-4"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-base-100 shadow-xl border">
-          <div class="card-body">
-            <div class="grid grid-cols-3 col-auto">
-              <div class="flex justify-center">
-                <i class="fas fa-check-square fa-4x p-2"></i>
-              </div>
-              <div class="col-span-2">
-                <h2 class="card-title">PERTEK Lingkungan</h2>
-                <p class="text-sm">
-                  Terbagi menjadi 3 Pertek, Pertek air limbah, Pertek emisi dan
-                  Pertek B3.
-                </p>
-              </div>
-            </div>
-            <div class="card-actions justify-center">
-              <button class="btn btn-ghost btn-wide">
-                Buy Now
-                <i class="fas fa-arrow-right ml-4"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-base-100 shadow-xl border">
-          <div class="card-body">
-            <div class="grid grid-cols-3 col-auto">
-              <div class="flex justify-center">
-                <i class="fas fa-check-square fa-4x p-2"></i>
-              </div>
-              <div class="col-span-2">
-                <h2 class="card-title">Monitoring RKL-RPL</h2>
-                <p class="text-sm">
-                  Pemantauan dan evaluasi lingkungan hidup per semester (6
-                  bulan)
-                </p>
-              </div>
-            </div>
-            <div class="card-actions justify-center">
-              <button class="btn btn-ghost btn-wide">
-                Buy Now
-                <i class="fas fa-arrow-right ml-4"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div> -->
 
     <!-- section -->
-    <section class="bg-base-100">
+    <!-- <section class="bg-base-100">
       <div
         class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8"
       >
@@ -529,10 +651,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- section -->
-    <section class="">
+    <!-- <section class="">
       <div
         class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8"
       >
@@ -559,7 +681,117 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+    <div class="bg-gray-700">
+      <div
+        class="container mx-auto p-4 py-8 max-w-3xl text-white text-center [&>p]:py-2"
+      >
+        <div class="text-4xl font-bold my-7 text-center uppercase">
+          Konsultasi Gratis
+        </div>
+        <p>
+          Kirimkan SMS dengan mencantumkan Nama, Alamat, dan Permasalahan yang
+          Anda hadapi ke nomor berikut:
+        </p>
+        <p class="text-xl font-bold">081233477456 / 085648220550</p>
+        <p>
+          Kami dengan senang hati akan mendatangi lokasi usaha Anda dan
+          memberikan <b><u>KONSULTASI GRATIS</u></b> mengenai Perizinan dan
+          Pengelolaan Lingkungan usaha Anda.
+        </p>
+        <p class="font-bold text-xl">100% FREE!</p>
+        <p>
+          Naztama Bumi Raya, Mitra Profesional untuk Pengembangan Usaha Anda.
+        </p>
+      </div>
+    </div>
+
+    <section class="bg-base-100">
+      <div class="container mx-auto p-4 py-8 max-w-6xl">
+        <!-- carousel with many medium image using swiper -->
+        <h1 class="font-bold text-3xl text-center mt-4 mb-8">
+          Dokumentasi Kegiatan
+        </h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper [&>div>img]:rounded">
+            <div class="swiper-slide">
+              <img
+                src="http://www.naztamabumiraya.com/wp-content/uploads/2016/02/Jasa-Penyusunan-Laporan-Pemantauan-Lingkungan.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="http://www.naztamabumiraya.com/wp-content/uploads/2016/02/Konsultan-Pemantauan-kualitas-udara.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="http://www.naztamabumiraya.com/wp-content/uploads/2016/02/Konsultan-UKL-UPL-Konsultan-UKL-UPL-Surabaya-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="http://www.naztamabumiraya.com/wp-content/uploads/2016/02/Jasa-Desain-dan-Perancangan-TPS-Limbah-B3-e1381111214236.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="http://www.naztamabumiraya.com/wp-content/uploads/2016/02/Jasa-UKL-UPL-Jasa-Urus-Izin-TPS-Limbah-B3-Jasa-Pengelolaan-Limbah-B3-e1381122282656.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="http://www.naztamabumiraya.com/wp-content/uploads/2016/02/Jasa-TPS-Limbah-B3-e1381111469523.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="http://www.naztamabumiraya.com/wp-content/uploads/2016/02/Jasa-Penyusunan-Laporan-Pemantauan-Lingkungan1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="http://www.naztamabumiraya.com/wp-content/uploads/2016/02/Jasa-Konsultan-UKL-UPL.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="http://www.naztamabumiraya.com/wp-content/uploads/2016/02/Jasa-UKL-UPL-Surabaya-Dokumen-UKL-UPL-Surabaya.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination relative bottom-0"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
     </section>
+
+    <!-- floating whatsapp button with bubble speech -->
+    <div class="fixed bottom-0 right-0 z-10 mb-4 mr-4">
+      <a
+        href="https://api.whatsapp.com/send?phone=6281233477456&text=Halo%20Admin%20Naztama%20Saya%20Ingin%20Bertanya"
+        target="_blank"
+        class="flex items-center justify-center w-12 h-12 bg-green-600 rounded-full shadow-lg hover:bg-green-700"
+      >
+        <i class="fab fa-whatsapp text-2xl text-white"></i>
+      </a>
+      <!-- <div
+        class="absolute bottom-0 left-0 transform -translate-y-3/4 -translate-x-1/2 bg-white p-2 rounded-lg shadow-lg border"
+      >
+        <p class="text-sm text-gray-800">Join Group whatsapp</p>
+      </div> -->
+    </div>
 
     <!-- footer -->
     <footer class="bg-base-100">
@@ -567,10 +799,10 @@
       <div class="container mx-auto p-4 mt-10 max-w-6xl">
         <div class="flex flex-wrap">
           <div class="w-full md:w-2/5 text-center md:text-left">
-            <h5 class="text-xl font-bold mb-6">About Us</h5>
-            <p class="mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              necessitatibus incidunt ut officiis explicabo inventore.
+            <img src="img/logo-naztama.png" alt="" class="mb-4" />
+            <p class="mb-2">JL. KLAMPIS ANOM IV NO. 24 SURABAYA</p>
+            <p class="mb-6 text-sm">
+              Perum Wisma Mukti Blok F58, Surabaya - Jawa Timur
             </p>
             <ul class="flex flex-row justify-center md:justify-start">
               <li class="mr-3">
@@ -599,10 +831,10 @@
             <h5 class="text-xl font-bold mb-6">Tentang Kami</h5>
             <ul class="list-none footer-links">
               <li class="mb-2">
-                <a href="#" class="hover:underline">Tentang Kami</a>
+                <a href="tentang.html" class="hover:underline">Tentang Kami</a>
               </li>
               <li class="mb-2">
-                <a href="#" class="hover:underline">Kontak Kami</a>
+                <a href="kontak.html" class="hover:underline">Kontak Kami</a>
               </li>
             </ul>
           </div>
@@ -610,6 +842,9 @@
             <h5 class="text-xl font-bold mb-6">Layanan</h5>
             <ul class="list-none footer-links">
               <li class="mb-2">
+                <a href="jasa.html" class="hover:underline">Lingkup Jasa</a>
+              </li>
+              <!-- <li class="mb-2">
                 <a href="pelayanan-amdal.html" class="hover:underline">Amdal</a>
               </li>
               <li class="mb-2">
@@ -629,27 +864,27 @@
                 <a href="pelayanan-pertek.html" class="hover:underline"
                   >PERTEK</a
                 >
-              </li>
+              </li> -->
             </ul>
           </div>
           <div class="w-full md:w-1/5 text-center md:text-left">
             <h5 class="text-xl font-bold mb-6">Hubungi Kami</h5>
             <ul class="list-none footer-links">
               <li class="mb-2">
-                <a href="#" class="hover:underline">+62 812 3456 7890</a>
+                <p>081 233 477 456</p>
               </li>
               <li class="mb-2">
-                <a href="#" class="hover:underline">+62 812 3456 7890</a>
+                <p>085 648 220 550</p>
               </li>
               <li class="mb-2">
-                <a href="#" class="hover:underline">+62 812 3456 7890</a>
+                <p>naztamabumiraya@gmail.com</p>
               </li>
             </ul>
           </div>
         </div>
         <div class="flex justify-center md:justify-start mt-6">
           <div class="text-sm text-gray-600">
-            © 2023, estaesta. All Rights Reserved.
+            © 2023, Naztama Bumi Raya. All Rights Reserved.
           </div>
         </div>
       </div>
@@ -661,7 +896,7 @@
 
   <!-- Initialize Swiper -->
   <script>
-    const swiper = new Swiper(".swiper", {
+    const swiper = new Swiper(".swiperx", {
       // Optional parameters
       // direction: 'vertical',
       centeredSlides: true,
@@ -679,6 +914,35 @@
       },
 
       // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var mySwiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      loop: true,
+      speed: 1000,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+      },
+      spaceBetween: 15,
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
